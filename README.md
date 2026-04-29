@@ -1,9 +1,9 @@
-<![CDATA[<div align="center">
+<div align="center">
 
 # 📚 TERM Edu — Learning Management System
 
-**A native Android wrapper for the [termedu.in](https://app.termedu.in) LMS platform,  
-delivering a seamless, app-like learning experience with push notifications,  
+**A native Android wrapper for the [termedu.in](https://app.termedu.in) LMS platform,
+delivering a seamless, app-like learning experience with push notifications,
 media controls, and deep-link support.**
 
 ![Android](https://img.shields.io/badge/Platform-Android-3DDC84?logo=android&logoColor=white)
@@ -156,7 +156,7 @@ Termedu-LMS-Learning-Management-System/
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/Termedu-LMS-Learning-Management-System.git
+   git clone https://github.com/milansingla/Termedu-LMS-Learning-Management-System.git
    cd Termedu-LMS-Learning-Management-System
    ```
 
@@ -295,7 +295,7 @@ boolean forceDarkTheme          = false;      // Force dark mode
 
 ## 📄 License
 
-This project is proprietary software developed for **TERM Edu (termedu.in)**.  
+This project is proprietary software developed for **TERM Edu (termedu.in)**.
 All rights reserved.
 
 ---
@@ -304,7 +304,6 @@ All rights reserved.
 
 **Built with ❤️ for TERM Edu**
 
-[Website](https://termedu.in) · [Report Bug](https://github.com/your-username/Termedu-LMS-Learning-Management-System/issues) · [Request Feature](https://github.com/your-username/Termedu-LMS-Learning-Management-System/issues)
+[Website](https://termedu.in) · [Report Bug](https://github.com/milansingla/Termedu-LMS-Learning-Management-System/issues) · [Request Feature](https://github.com/milansingla/Termedu-LMS-Learning-Management-System/issues)
 
 </div>
-]]>
