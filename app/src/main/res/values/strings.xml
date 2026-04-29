@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">TERM Edu</string>
+    <string name="download_description">Downloading file…</string>
+    <string name="download_started">Download started</string>
+    <string name="download_failed">Download failed</string>
+    <string name="push_distributor_required_title">Push Distributor Required</string>
+    <string name="push_distributor_required_message">Please install a UnifiedPush distributor app to receive notifications.</string>
+    <string name="learn_more">Learn More</string>
+    <string name="notification_error_ssl_cert_invalid">SSL certificate is invalid. Do you want to continue?</string>
+    <string name="auth_dialog">Authentication Required</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="external_link">External Link</string>
+    <string name="open_in_external_app">Open this link in an external app?</string>
+    <string name="open_in_browser">Open this link in your browser?</string>
+    <string name="exit_app">Press back again to exit</string>
+    <string name="error">Connection Error</string>
+    <string name="errorText">Something went wrong. Please check your connection.</string>
+</resources>

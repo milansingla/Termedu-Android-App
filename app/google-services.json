@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "859888170268",
+    "project_id": "termedu-fb194",
+    "storage_bucket": "termedu-fb194.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:859888170268:android:4ffe8ac388ea1cf93a36d9",
+        "android_client_info": {
+          "package_name": "in.termedu.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJrUiBAWUA7GDs06iG2M5uSFZKOHhFVRk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
