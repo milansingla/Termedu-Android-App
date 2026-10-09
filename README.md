@@ -1,8 +1,8 @@
 <div align="center">
 
-# 📚 TERM Edu — Learning Management System
+# 📱 TERM Edu — Android App
 
-**A native Android wrapper for the [termedu.in](https://app.termedu.in) LMS platform,
+**The official Android app for the [TERM Edu](https://app.termedu.in) learning platform — a native shell around the LMS web app,
 delivering a seamless, app-like learning experience with push notifications,
 media controls, and deep-link support.**
 
@@ -19,7 +19,7 @@ media controls, and deep-link support.**
 
 ## 🎯 Overview
 
-**TERM Edu** is a production Android application that wraps the TERM Edu web platform (`app.termedu.in`) inside a feature-rich WebView shell. It goes far beyond a simple browser wrapper — the app integrates **Firebase Cloud Messaging**, **UnifiedPush**, **media session controls**, a **JavaScript bridge API**, and native permission handling to provide students with a first-class mobile learning experience.
+**TERM Edu for Android** is a production Android application (`in.termedu.app`) that wraps the TERM Edu web platform (`app.termedu.in`) inside a feature-rich WebView shell. It goes far beyond a simple browser wrapper — the app integrates **Firebase Cloud Messaging**, **UnifiedPush**, **media session controls**, a **JavaScript bridge API**, and native permission handling to provide students with a first-class mobile learning experience.
 
 ---
 
@@ -91,7 +91,7 @@ media controls, and deep-link support.**
 ## 📁 Project Structure
 
 ```
-Termedu-LMS-Learning-Management-System/
+Termedu-Android-App/
 ├── app/
 │   ├── src/main/
 │   │   ├── java/in/termedu/app/
@@ -120,6 +120,7 @@ Termedu-LMS-Learning-Management-System/
 ├── build.gradle                           # Root Gradle config
 ├── settings.gradle                        # Project settings (JitPack, Google, MavenCentral)
 ├── gradle.properties                      # JVM arguments
+├── keystore.properties.example            # Template for release signing credentials
 └── README.md                              # This file
 ```
 
@@ -156,8 +157,8 @@ Termedu-LMS-Learning-Management-System/
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/milansingla/Termedu-LMS-Learning-Management-System.git
-   cd Termedu-LMS-Learning-Management-System
+   git clone https://github.com/milansingla/Termedu-Android-App.git
+   cd Termedu-Android-App
    ```
 
 2. **Open in Android Studio:**
@@ -176,13 +177,20 @@ Termedu-LMS-Learning-Management-System/
 
 ### Signing (Release)
 
-The release signing config is defined in `app/build.gradle`. For production builds:
+Release signing credentials are read from a `keystore.properties` file in the project root, which is gitignored. To build a signed release:
 
-```bash
-./gradlew assembleRelease
-```
+1. Place your keystore (e.g. `termedu-release.jks`) in the `app/` directory.
+2. Copy the template and fill in your credentials:
+   ```bash
+   cp keystore.properties.example keystore.properties
+   ```
+3. Build:
+   ```bash
+   ./gradlew assembleRelease     # APK
+   ./gradlew bundleRelease       # AAB for Google Play
+   ```
 
-> **Note:** Update the keystore credentials in `app/build.gradle` before publishing. Never commit keystore passwords to version control in production.
+> **Note:** Never commit `keystore.properties` or `.jks` files. Both are already listed in `.gitignore`.
 
 ---
 
@@ -261,7 +269,7 @@ WebToApk.getUnifiedPushSubscriptionJson();   // → JSON string
 | Variant | Description |
 |---|---|
 | `debug` | Development build with debugging enabled |
-| `release` | Signed production build (ProGuard disabled) |
+| `release` | Signed production build (ProGuard disabled; requires `keystore.properties`) |
 
 ---
 
@@ -304,6 +312,6 @@ All rights reserved.
 
 **Built with ❤️ for TERM Edu**
 
-[Website](https://termedu.in) · [Report Bug](https://github.com/milansingla/Termedu-LMS-Learning-Management-System/issues) · [Request Feature](https://github.com/milansingla/Termedu-LMS-Learning-Management-System/issues)
+[Website](https://termedu.in) · [Web App](https://app.termedu.in) · [Report Bug](https://github.com/milansingla/Termedu-Android-App/issues) · [Request Feature](https://github.com/milansingla/Termedu-Android-App/issues)
 
 </div>
